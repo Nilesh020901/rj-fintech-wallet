@@ -5,3 +5,8 @@ export const paymentSchema = z.object({
   userId: z.number(),
   amount: z.number().positive()
 });
+
+export const walletBalanceSchema = z.object({
+  walletId: z.number(),
+  balance: z.number().min(0)
+});

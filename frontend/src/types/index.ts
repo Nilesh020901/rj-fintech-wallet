@@ -10,3 +10,15 @@ export interface Wallet {
   id: number;
   balance: number;
 }
+
+export interface Department {
+  department_id: number;
+  department_name: string;
+  wallet_id: number;
+  balance: number;
+}
+
+export interface User {
+  id: number;
+  name: string;
+}
